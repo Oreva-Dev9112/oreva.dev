@@ -1,0 +1,13 @@
+.linkedin-btn {
+  background-color: #0077B5; /* LinkedIn blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582; /* Darker LinkedIn blue on hover */
+}

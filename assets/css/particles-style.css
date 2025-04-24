@@ -1,0 +1,58 @@
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
+#about .border {
+  background-color: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+/* Glowing effect for text */
+.glow-text {
+  text-shadow: 0 0 10px rgba(168, 255, 83, 0.5);
+}
+
+/* Subtle pulse animation for interactive elements */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse-on-hover:hover {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+#particles-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-container canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2; /* Increased z-index to overlay */
+}
+
+#particles-container > * {
+  position: relative;
+  z-index: 1;
+}
